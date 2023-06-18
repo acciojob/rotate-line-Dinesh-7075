@@ -1,1 +1,33 @@
 /*  your css code here. If applicable */
+#line {
+	position:fixed;
+	top:200px;
+	left:100px;
+	background-color: black;
+	height:2px;
+	width:200px;
+	animation-name: circularRotation;
+	animation-duration: 3s;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+}
+@keyframes circularRotation{
+	0% {
+		transform:rotate(0deg);
+	}
+	25% {
+		transform:rotate(45deg);
+	}
+	50% {
+		transform:rotate(90deg);
+	}
+	75% {
+		transform:rotate(180deg);
+	}
+	100% {
+		transform:rotate(270deg);
+	}
+	125% {
+		transform:rotate(360deg);
+	}
+}
